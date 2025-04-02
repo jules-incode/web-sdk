@@ -3,6 +3,7 @@ let session;
 const incodeContainer = document.querySelector("#incode-container");
 
 async function app(){
+	alert("Incode Web SDK Demo");
 	incode = await window.OnBoarding.create({
     apiURL: "https://demo-api.incodesmile.com/0" // API URL provided by Incode
   });  
@@ -50,10 +51,14 @@ function validateId() {
 }
 
 function captureSelfie() {
-  incode.renderCamera("selfie", container, {
+  incode.renderCamera("selfie", incodeContainer, {
     token: session,
     numberOfTries: 3,
-    onSuccess: () => mySessionFinishMethod(session.token),
+    //onSuccess: () => mySessionFinishMethod(session.token),
+	onSuccess: () => {
+  console.log("✅ Verificación finalizada con éxito");
+  alert("Verificación finalizada con éxito");
+}  
     onError: console.log,
     showTutorial: true,
   });
