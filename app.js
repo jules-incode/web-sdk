@@ -4,7 +4,7 @@ const incodeContainer = document.querySelector("#incode-container");
 
 async function app(){
 	incode = await window.OnBoarding.create({
-    apiURL: "https://demo-api.incodesmile.com" // API URL provided by Incode
+    apiURL: "https://demo-api.incodesmile.com/0" // API URL provided by Incode
   });  
 
   //Store the session object in a variable for later use
