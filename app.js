@@ -58,7 +58,7 @@ function captureSelfie() {
 	onSuccess: () => {
   console.log("✅ Verificación finalizada con éxito");
   alert("Verificación finalizada con éxito");
-}  
+},  
     onError: console.log,
     showTutorial: true,
   });
