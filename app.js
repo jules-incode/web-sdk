@@ -2,8 +2,7 @@ let incode;
 let session;
 const incodeContainer = document.querySelector("#incode-container");
 
-async function app(){
-	alert("Incode Web SDK Demo");
+async function app(){	
 	incode = await window.OnBoarding.create({
     apiURL: "https://demo-api.incodesmile.com/0" // API URL provided by Incode
   });  
@@ -21,6 +20,7 @@ async function app(){
 document.addEventListener("DOMContentLoaded", app);
 
 function captureIdFrontSide() {
+	alert("start captureIdFrontSide()");
   incode.renderCamera("front", incodeContainer, {
     token: session,
     numberOfTries: 3,
