@@ -18,7 +18,7 @@ async function app(){
   captureIdFrontSide();
 }
 
-document.addEventListener("DOMContentLoaded", app);
+//document.addEventListener("DOMContentLoaded", app);
 
 function captureIdFrontSide() {
   incode.renderCamera("front", incodeContainer, {
