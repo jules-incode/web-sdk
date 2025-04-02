@@ -28,6 +28,7 @@ function captureIdFrontSide() {
     onError: console.log,
     showTutorial: true,
   });
+	alert("ends captureIdFrontSide()");
 }
 
 function captureIdBackSide() {
