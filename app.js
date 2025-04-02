@@ -20,15 +20,13 @@ async function app(){
 // document.addEventListener("DOMContentLoaded", app);
 
 function captureIdFrontSide() {
-	alert("start captureIdFrontSide()");
   incode.renderCamera("front", incodeContainer, {
     token: session,
     numberOfTries: 3,
     onSuccess: captureIdBackSide,
     onError: console.log,
     showTutorial: true,
-  });
-	alert("ends captureIdFrontSide()");
+  });	
 }
 
 function captureIdBackSide() {
